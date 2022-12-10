@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* root */
 :root{
     /* fonts */
-    --first-font: 'Open Sans', Arial, sans-serif;
+    --first-font: 'Poppins', Arial, sans-serif;
 
     /* cores */
-    --back-color: #D1DBBD;
+    --back-color: #e6e6e6;
     --back-color-alt: white;
     --first-color: #004B8D;
     --first-color-alt: #00294D;
@@ -157,27 +157,28 @@ img{
 }
 
 .nav_link{
-    color: var(--first-color);
+    color: var(--first-color-alt);
     font-weight: var(--font-bold);
     letter-spacing: 1px;
     transition: color .3s ease;
 }
 
 .nav_link:hover{
-    color: var(--first-color-alt);
+    color: var(--first-color);
 }
 
 .nav_close{
     position: absolute;
-    top: 2rem; right: 2.5rem;
+    top: 2rem; right: 1.5rem;
     font-size: calc(var(--font-size-big) + .2rem);
     cursor: pointer;
     transition: color .3s ease;
     font-weight: var(--font-bold);
+    color: var(--first-color-alt);
 }
 
 .nav_close:hover{
-    color: var(--first-color-alt);
+    color: var(--first-color);
 }
 
 .show-menu{
@@ -196,7 +197,7 @@ img{
     padding-top: 4rem;
 }
 
-.box_img{
+.home_box_img{
     position: relative;
     justify-self: center;
 }
@@ -255,6 +256,7 @@ img{
     text-transform: uppercase;
     cursor: pointer;
     transition: background .4s ease;
+    border-radius: 1rem;
 }
 
 .home_energy_button i{
