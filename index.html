@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- botão pra subir -->
-    <span class="pageUp"><a href="#" class="pageUp_button"><i class="ri-arrow-up-line"></i></a></span>
+    <span class="pageUp" id="pageUp"><a href="#" class="pageUp_button"><i class="ri-arrow-up-line"></i></a></span>
     <!-- menu -->
     <header class="header" id="header">
         <div class="nav container" id="nav">
@@ -25,13 +25,13 @@
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#header" class="nav_link">Início</a>
+                        <a href="#home" class="nav_link">Início</a>
                     </li>
                     <li class="nav_item">
                         <a href="#budget" class="nav_link">Orçamento</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Contato</a>
+                        <a href="#contact" class="nav_link">Contato</a>
                     </li>
                     <li class="nav_item">
                         <a href="#" class="nav_link">Termos e Condições</a>
@@ -59,8 +59,8 @@
                 </div>
                 <div class="home_text">
                     <h1 class="home_title">Carlos <strong>Solarinvest</strong></h1>
-                    <p class="home_desc">Sua energia solar chegou!</p>
-                    <button class="home_energy_button" id="home-energy-button"><i class="ri-sun-fill"></i> Ligar Energia</button>
+                    <p class="home_desc">Sua energia solar chegou em Maceió/AL</p>
+                    <button class="home_energy_button" id="home-energy-button"><i class="ri-sun-fill"></i>Ligar Energia</button>
                 </div>
             </div>
         </section>
@@ -75,10 +75,77 @@
                 </div>
             </article>
         </section>
+        <!-- contato -->
+        <section class="contact section" id="contact">
+            <article class="contact_container container grid">
+                <h2 class="contact_section_title">Contato</h2>
+                <div class="contact_text">
+                    <h3 class="contact_title">Adquira seus Painéis de Energia Solar fotovoltáico e reduza em até 90% de sua conta de energia elétrica</h3>
+                    <address class="contact_address">
+                        <p class="contact_desc">
+                            Entre em contato com a gente através do nosso E-mail
+                            <a href="mailto:carlosolarinvest@gmail.com"><i class="ri-mail-line"></i> carlosolarinvest@gmail.com</a>
+                        </p>
+                    </address>
+                    <form class="contact_form" id="contact-form">
+                        <h3 class="contact_form_title">Tem alguma dúvida? Nos envie uma mensagem</h3>
+                        <label for="name" class="contact_form_label">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Nome e sobrenome" class="contact_form_name">
+                        <label for="email" class="contact_form_label">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail" class="contact_form_email">
+                        <label for="msg" class="contact_form_label">Mensagem</label>
+                        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Coloque sua mensagem" class="contact_form_msg"></textarea>
+                        <button type="submit" class="contact_form_button">Enviar<i class="ri-mail-send-line"></i></button>
+                    </form>
+                </div>
+            </article>
+        </section>
     </main>
     <!-- rodapé da página -->
     <footer class="footer" id="footer">
-
+        <div class="footer_container container grid">
+            <a href="index.html" class="footer_logo">
+                carlos <strong>solarinvest</strong>
+            </a>
+            <nav class="footer_nav" id="footer-nav">
+                <ul class="footer_nav_list">
+                    <!-- sociais -->
+                    <h3 class="footer_nav_list_title">Sociais</h3>
+                    <li class="footer_nav_item">
+                        <a href="#" class="footer_nav_link">
+                            Whatsapp
+                        </a>
+                    </li>
+                    <li class="footer_nav_item">
+                        <a href="#" class="footer_nav_link">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="footer_nav_item">
+                        <a href="#" class="footer_nav_link">
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+                <!-- contato -->
+                <address class="footer_address" id="footer-address">
+                    <h3 class="footer_address_title">Contato</h3>
+                    <ul class="footer_address_list">
+                        <li class="footer_address_item">
+                            carlosolarinvest@gmail.com
+                        </li>
+                        <li class="footer_address_item">
+                            Tel: +55 (00) 00000-0000
+                        </li>
+                    </ul>
+                </address>
+            </nav>
+            <!-- créditos -->
+            <div class="footer_credit" id="footer-credit">
+                &copy; <a href="http://github.com/artuurlz" target="_blank" rel="noopener noreferrer" class="footer_credit_link">artuurlz</a>
+                <span class="footer_credit_span">Créditos pelas imagens: <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer" class="footer_credit_link">flaticon.com</a></span>
+            </div>
+        </div>
     </footer>
     <!-- script da página -->
     <script src="js/main.js"></script>
