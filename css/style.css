@@ -89,6 +89,7 @@ img{
     padding: 8px 8px 8px 8px;
     font-size: calc(var(--font-size-big) + .2rem);
     border: 2px solid;
+    border-radius: .5rem;
     color: var(--first-color);
     cursor: pointer;
     transition: color .3s ease;
