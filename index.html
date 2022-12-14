@@ -87,11 +87,11 @@
                     <form class="contact_form" id="contact-form">
                         <h3 class="contact_form_title">Tem alguma dúvida? Nos envie uma mensagem</h3>
                         <label for="name" class="contact_form_label">Nome</label>
-                        <input type="text" name="name" id="name" placeholder="Seu nome e sobrenome" class="contact_form_name">
+                        <input type="text" name="name" id="name" placeholder="Seu nome e sobrenome" class="contact_form_name" maxlength="70">
                         <label for="email" class="contact_form_label">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Seu e-mail" class="contact_form_email">
+                        <input type="email" name="email" id="email" placeholder="Coloque seu E-mail" class="contact_form_email" valid>
                         <label for="msg" class="contact_form_label">Mensagem</label>
-                        <textarea name="msg" id="msg" cols="10" rows="5" placeholder="Coloque sua mensagem" class="contact_form_msg"></textarea>
+                        <textarea name="msg" id="msg" cols="10" rows="5" placeholder="Coloque sua mensagem" class="contact_form_msg" maxlength="220"></textarea>
                         <button type="submit" class="contact_form_button">Enviar<i class="ri-mail-send-line"></i></button>
                     </form>
                 </div>
