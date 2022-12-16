@@ -276,7 +276,7 @@ img{
     padding: 15px;
     font-size: var(--font-size-normal);
     column-gap: .5rem;
-    background-color: var(--second-color);
+    background-color: var(--second-color-alt);
     border: 2px solid var(--first-color-alt);
     color: var(--first-color-alt);
     font-weight: var(--font-bold);
@@ -293,7 +293,7 @@ img{
 }
 
 .home_energy_button:hover{
-    background-color: var(--second-color-alt);
+    background-color: var(--second-color);
 }
 
 /* orçamento */
@@ -394,6 +394,10 @@ img{
 .contact_title{
     font-weight: 100;
     font-size: var(--font-size-normal);
+}
+
+.contact_title_span{
+    color: var(--second-color);
 }
 
 .contact_desc{
@@ -516,6 +520,7 @@ img{
 
 .footer_logo{
     font-size: var(--font-size-normal);
+    user-select: none;
 }
 
 .footer_nav{
@@ -587,14 +592,14 @@ img{
     /* fundo azul */
 .home_title::selection, .home_title strong::selection, .home_desc::selection,
 .budget_title::selection, .budget_desc::selection,
-.contact_form_title::selection, .contact_form_label::selection, .contact_form_button::selection,.contact_form_name::selection, .contact_form_email::selection, .contact_form_msg::selection{
+.contact_form_title::selection, .contact_form_label::selection, .contact_form_button::selection,.contact_form_name::selection, .contact_form_email::selection, .contact_form_msg::selection, .footer_nav_list_title::selection, .footer_nav_link::selection, .footer_address_title::selection, .footer_address_item::selection, .footer_author::selection, .footer_author_link::selection, .footer_credit_span::selection, .footer_credit_link::selection{
     background: var(--first-color-alt);
     color: var(--back-color);
 }
 
     /* fundo branco */
 .contact_section_title::selection, .contact_title::selection,
-.contact_desc::selection, .contact_desc a::selection{
+.contact_desc::selection, .contact_desc a::selection, .contact_title_span::selection{
     background: var(--back-color);
     color: var(--first-color-alt);
 }
@@ -681,11 +686,11 @@ img{
     font-size: calc(var(--font-size-big) + 1rem);
    }
 
-   .contact_title, .contact_desc{
+   .contact_title, .contact_desc, .contact_form_title{
     font-size: var(--font-size-big);
    }
 
-   .contact_form_title, .contact_form_label, .contact_form_button,.contact_form_button i{
+   .contact_form_label, .contact_form_button,.contact_form_button i{
     font-size: var(--font-size-normal);
     margin: .5rem 0 .2rem;
    }
@@ -707,5 +712,9 @@ img{
 @media screen and (min-width: 1064px) { 
    .container{
     margin-inline: auto;
+   }
+
+   .home_container, .budget_container{
+    justify-content: space-around;
    }
 }
