@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* root */
 :root{
     /* fonts */
     --first-font: 'Poppins', Arial, sans-serif;
+    --second-font: 'Open Sans', Arial, sans-serif;
 
     /* cores */
     --back-color: #e6e6e6;
@@ -38,7 +40,7 @@ html{
 }
 
 body{
-    font-family: var(--first-font);
+    font-family: var(--second-font);
     background-color: var(--back-color);
 }
 
@@ -700,11 +702,11 @@ img{
    }
 
    .footer_nav_list_title, .footer_address_title{
-    font-size: calc(var(--font-size-big) + .5rem);
+    font-size: var(--font-size-big);
    }
 
    .footer_nav_link, .footer_address_item{
-    font-size: calc(var(--font-size-big) - .2rem);
+    font-size: var(--font-size-normal);
    }
 }
 
