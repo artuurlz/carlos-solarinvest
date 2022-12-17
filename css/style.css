@@ -8,14 +8,14 @@
     --second-font: 'Open Sans', Arial, sans-serif;
 
     /* cores */
-    --back-color: #e6e6e6;
+    --back-color: hsla(0, 0%, 90%, 100%);
     --back-color-alt: white;
-    --first-color: #004B8D;
-    --first-color-alt: #00294D;
-    --second-color: #fdd82e;
-    --second-color-alt: #d0b126;
-    --three-color: #00ABFF;
-    --three-color-alt: #0192db;
+    --first-color: hsla(208, 100%, 28%, 100%);
+    --first-color-alt: hsla(208, 100%, 15%, 100%);
+    --second-color: hsla(49, 98%, 59%, 100%);
+    --second-color-alt: hsla(49, 69%, 48%, 100%);
+    --three-color: 	hsla(200, 100%, 50%, 100%);
+    --three-color-alt: 	hsla(200, 99%, 43%, 100%);
 
     /* tamanhos */
     --height-size: 5rem;
