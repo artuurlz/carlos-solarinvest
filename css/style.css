@@ -456,7 +456,7 @@ img {
 
 .contact_form_title {
   font-size: var(--font-size-normal);
-  padding-top: 1rem;
+  padding: 1rem 0;
   text-align: center;
 }
 
