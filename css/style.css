@@ -591,9 +591,18 @@ img {
 
 .footer_nav_link,
 .footer_address_item {
+    display: flex;
+    align-items: center;
   font-size: var(--font-size-normal);
   color: var(--first-color);
   transition: color 0.3s ease;
+  column-gap: .5rem;
+  padding-bottom: .6rem;
+}
+
+.footer_nav_link i,
+.footer_address_item i{
+    font-size: calc(var(--font-size-normal) + .2rem);
 }
 
 .footer_nav_link:hover {
@@ -607,7 +616,7 @@ img {
 .footer_address_list {
   display: flex;
   flex-direction: column;
-  row-gap: 0.4rem;
+  row-gap: 0.6rem;
 }
 
 .footer_credit {
