@@ -410,11 +410,6 @@ img{
 .contact_desc a{
     color: var(--second-color);
     transition: color .3s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem;
-    column-gap: .5rem;
 }
 
 .contact_desc a i{
@@ -521,6 +516,8 @@ img{
 }
 
 .footer_logo{
+    display: block;
+    width: 150px;
     font-size: var(--font-size-normal);
     user-select: none;
 }
