@@ -460,6 +460,17 @@ img {
   text-align: center;
 }
 
+.contact_form_group{
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+}
+
+.contact_form_group_box{
+    display: flex;
+    flex-direction: column;
+}
+
 .contact_form_label {
   padding: 0.7rem 0 0.2rem;
   font-size: var(--font-size-normal);
@@ -709,6 +720,18 @@ img {
   .footer_nav {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .contact_form_group {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .contact_form_group_box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
   }
 }
 
