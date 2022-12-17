@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Carlos Solarinvest</title>
 </head>
 <body>
@@ -57,14 +58,14 @@
                 <div class="home_text">
                     <h1 class="home_title">Carlos <strong>Solarinvest</strong></h1>
                     <p class="home_desc">Sua energia solar chegou em Maceió/AL</p>
-                    <button class="home_energy_button" id="home-energy-button"><i class="ri-sun-fill"></i>Ligar Energia</button>
+                    <button class="home_energy_button" id="home-energy-button"><i class="ri-sun-fill"></i>Desligar</button>
                 </div>
             </div>
         </section>
         <!-- orçamento -->
         <section class="budget section" id="budget">
             <article class="budget_container container grid">
-                <img src="img/budget.png" alt="budget image" class="bugdet_img">
+                <img src="img/budget.png" alt="budget image" class="budget_img">
                 <div class="budget_text">
                     <h2 class="budget_title">Orçamento</h2>
                     <p class="budget_desc">Envie-nos a última Conta de Energia Elétrica para calcularmos toda a quantidade de Painéis Solares, Inversores, Micro Inversores, Estruturas para serem colocados os Painéis, Fios Especiais, Conectores e o Frete.</p>
@@ -153,5 +154,37 @@
     </footer>
     <!-- script da página -->
     <script src="js/main.js"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 200
+        });
+
+        ScrollReveal().reveal('.home_img', {
+            duration: 1000
+        });
+
+        ScrollReveal().reveal('.home_text', {
+            duration: 1000,
+            origin: 'right'
+        });
+
+        ScrollReveal().reveal('.budget_img', {
+            duration: 1000
+        });
+
+        ScrollReveal().reveal('.budget_text', {
+            duration: 1000,
+            origin: 'left'
+        });
+
+        ScrollReveal().reveal('.contact_form', {
+            duration: 1000,
+            origin: 'bottom'
+        });
+
+    </script>
 </body>
 </html>
