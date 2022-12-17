@@ -42,6 +42,7 @@ html {
 body {
   font-family: var(--second-font);
   background-color: var(--back-color);
+  overflow-x: hidden;
 }
 
 a {
