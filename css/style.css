@@ -567,8 +567,8 @@ img {
 }
 
 .footer_logo {
-  display: block;
-  width: 150px;
+  display: flex;
+  align-self: flex-start;
   font-size: var(--font-size-normal);
   -webkit-user-select: none;
   -moz-user-select: none;
